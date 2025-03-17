@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Marie Curie - Pioneira da Ciência</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="p-5">
+        <nav class="container d-flex justify-content-center align-items-center">
+            <img src="file:///C:/Users/User/Downloads/Captura_de_tela_2025-03-17_000459-removebg-preview.png" alt="Logotipo sobre Marie Curie" class="nav-img" loading="lazy"
+             width="450" height="250">
+            <ul class="nav mt-5 justify-content-center">
+                <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+                <li class="nav-item"><a class="nav-link" href="#biografia">Biografia</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contribuicoes">Contribuições</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+            </ul>          
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <section id="inicio" class="my-5">
+            <div class="inicio-fundo d-flex justify-content-between align-items-center">
+                <div class="esquerda-conteudo">
+                    <h1 class="display-4 text-white fst-italic fw-bold">Bem-vindo ao mundo de</h1>
+                    <img src="file:///C:/Users/User/Downloads/MARIE_CURIE-removebg-preview.png" alt="Logotipo sobre Marie Curie" class="mb-3" width="250" height="250">
+                    <a href="#biografia" class="btn btn-primary btn-lg botao-inicio fw-semibold">Quero conhecer!</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="biografia" class="my-5 pt-6 secao-biografia">
+            <div class="container d-flex align-items-center">
+                <div class="col-12">
+                    <h2 class="text-center">Quem foi Marie Curie?</h2>
+                    <p class="p-2">Marie Curie (1867-1934) foi uma cientista franco-polonesa conhecida por suas pesquisas pioneiras no campo da radioatividade. Ela foi a primeira mulher a ganhar um Prêmio Nobel e a única pessoa a receber o prêmio em duas áreas diferentes: Física (1903), juntamente com seu marido Pierre Curie e Henri Becquerel, pelo estudo da radiação, e Química (1911) por suas descobertas do rádio e do polônio, elementos químicos altamente radioativos.</p>
+                    <p>Curie foi uma das primeiras a estudar os efeitos da radiação e contribuiu enormemente para o avanço da medicina, utilizando a radiação no tratamento de câncer. Seu trabalho não só ampliou o entendimento sobre os átomos e a matéria, mas também abriu caminho para o desenvolvimento da física nuclear e outras áreas da ciência.</p>
+                    <p>Ela foi uma mulher de grande coragem e determinação, enfrentando desafios em uma época em que as mulheres enfrentavam grandes barreiras no mundo acadêmico e científico. Sua dedicação e paixão pela ciência deixaram um legado duradouro que ainda influencia muitas áreas do conhecimento.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contribuicoes">
+            <h2 class="text-center pt-5">Contribuições Científicas</h2>
+            <div class="container p-3 mt-3 fundo-galeria">
+                <div class="row justify-content-md-center">
+                    <div class="col-md-6">
+                        <h3 class="text-center">Descobertas</h3>
+                        <p>Marie Curie e seu marido, Pierre Curie, descobriram os elementos rádio e polônio. Seu trabalho com a radioatividade levou ao desenvolvimento de tratamentos de radiação para o câncer e à compreensão dos efeitos da radiação na saúde humana.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <h3 class="text-center">Legado</h3>
+                        <p>O legado de Marie Curie é imenso. Ela fundou o Instituto do Rádio em Paris e ajudou a estabelecer a primeira unidade de tratamento de câncer com radiação. Seu trabalho continua a influenciar a pesquisa científica e médica até hoje.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlYlZXwwct5EQVg12BNSvksCbjZ7jQ0SaRIA&s" alt=""
+                width="350" height="250"
+                >
+                <img src="https://cdn.univicosa.com.br/img/portal/noticia/acervo/37583mariecuriecolor.jpg" alt=""
+                width="350" height="250"
+                >
+                <img src="https://www3.unicentro.br/petfisica/wp-content/uploads/sites/54/2015/12/Marie_Curie_Nobel-Chem-e1677347038459.jpg" alt=""
+                width="350" height="250"
+                >
+       
+       
+       
+                <section id="contato">
+            <div class="container p-5 d-flex justify-content-center">
+                <div class="col-md-8 col-lg-10 rounded-5 formulario">
+                    <h2 class="mb-3 text-center">Entre em contato</h2>
+                    <form id="contactForm">
+                        <div class="form-group mb-3">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" class="form-control rounded-3 mt-1" placeholder="Digite seu nome completo" required>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" class="form-control rounded-3 mt-1" placeholder="Digite seu email" required>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" class="form-control rounded-4 mt-2" rows="4" placeholder="Escreva sua mensagem" required></textarea>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary btn-lg rounded-pill tamanho-botao">Enviar mensagem</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <div class="text-center my-4">
+            <button id="increaseFontSize" class="btn btn-secondary">Aumentar Fonte</button>
+            <button id="resetFontSize" class="btn btn-secondary">Voltar ao Normal</button>
+        </div>
+    </main>
+
+    <footer class="text-center p-3 fst-italic">
+        <p>Acesse nossas redes:</p>
+        <i class="bi bi-whatsapp"></i>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-tiktok"></i>
+        <p class="mt-3">Desenvolvido por Start by Alura. Projeto fictício sem fins comerciais.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
