@@ -1,23 +1,20 @@
-document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault();
+document.addEventListener('DOMContentLoaded', function () {
 
-    const nome = document.getElementById('nome').value;
-    const email = document.getElementById('email').value;
-    const mensagem = document.getElementById('mensagem').value;
+    const aumentaFonteBotao = document.getElementById('aumentar-fonte');
+    const diminuiFonteBotao = document.getElementById('diminuir-fonte');
 
-    console.log('Nome:', nome);
-    console.log('Email:', email);
-    console.log('Mensagem:', mensagem);
+    let tamanhoAtualFonte = 1;
 
-    this.reset();
-    alert('Mensagem enviada com sucesso!');
-});
+    aumentaFonteBotao.addEventListener('click', function () {
+        tamanhoAtualFonte += 0.1;
+        document.body.style.fontSize = `${tamanhoAtualFonte}rem`
 
-document.getElementById('increaseFontSize').addEventListener('click', function() {
-    const currentSize = parseFloat(getComputedStyle(document.body).fontSize);
-    document.body.style.fontSize = (currentSize + 0.000001) + 'rem'; // Aumenta a fonte em 0.05rem
-});
+    })
 
-document.getElementById('resetFontSize').addEventListener('click', function() {
-    document.body.style.fontSize = '1rem'; // Reseta a fonte para o tamanho padrão
-});
+    diminuiFonteBotao.addEventListener('click', function () {
+        tamanhoAtualFonte -= 0.1;
+        document.body.style.fontSize = `${tamanhoAtualFonte}rem`
+
+    })
+
+})
